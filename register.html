@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento de Férias</title>
+    <link rel="stylesheet" href="./Styles/register.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Painel Análitico Para Acompanhamento de Férias</h1>
+    </header>
+    <main>
+        <section>
+            <form id="formCadastro" aria-labelledby="formTitle">
+                <div class="form-group">
+                    <label for="userName">Nome:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Exemplo dos exemplos" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="Confpassword">Confirmar Senha:</label>
+                    <input type="password" id="Confpassword" name="Confpassword" placeholder="Digite novamente a senha" required>
+                </div>
+                <div class="button-group">
+                    <button class="buttonRegistrar" id="register" type="submit">Finalizar Cadastro</button>
+                    <button class="buttonEnter" id="enter" type="button">Já tem cadastro?</button>
+                </div>
+                <div id="message" class="message"></div>
+            </form>
+        </section>
+    </main>
+    <script src="./register.js"></script>
+</body>
+
+</html>

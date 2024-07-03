@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento de Férias</title>
+    <link rel="stylesheet" href="./Styles/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Painel Análitico Para Acompanhamento de Férias</h1>
+    </header>
+    <main>
+        <section>
+            <form id="formLogin" aria-labelledby="formTitle">
+                <div class="form-group">
+                    <label for="userName">Usuário:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="button-group">
+                    <button class="buttonEnter" id="enter" type="submit">Entrar</button>
+                    <button class="buttonRegister" id="register" type="button">Registrar</button>
+                </div>
+                <div id="message" class="message"></div>
+            </form>
+        </section>
+    </main>
+    <script src="./login.js"></script>
+</body>
+
+</html>

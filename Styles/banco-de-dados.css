@@ -1,0 +1,202 @@
+/* Estilos gerais */
+body {
+    flex-direction: column;
+    /* Direção da flexbox é coluna */
+    font-family: Arial, sans-serif;
+    /* Define a família de fontes */
+    margin: 0;
+    /* Remove margens padrão */
+}
+
+.centro {
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e6830;
+    /* Cor de fundo verde */
+    color: white;
+    /* Cor do texto branco */
+    padding: 1rem 0;
+    /* Espaçamento interno no topo e embaixo */
+}
+
+header nav {
+    margin-top: 1rem;
+    /* Espaçamento superior */
+}
+
+header nav ul {
+    list-style: none;
+    /* Remove estilos de lista */
+    display: flex;
+    /* Usa flexbox para layout em linha */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+}
+
+header nav ul li {
+    margin: 0 1rem;
+    /* Margens laterais dos itens de lista */
+}
+
+header nav ul li a {
+    color: white;
+    /* Cor do texto branco */
+    text-decoration: none;
+    /* Remove sublinhado */
+    font-size: 1.2rem;
+    /* Define o tamanho da fonte */
+    background-color: #3c863e;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+header nav ul li a:hover {
+    background-color: #74a376;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos para a tabela do banco de dados */
+table {
+    width: 100%; /* Largura completa da tabela */
+    border-collapse: collapse; /* Remove espaçamento entre bordas */
+    margin: 2rem 0; /* Espaçamento externo acima e abaixo */
+}
+
+table th, table td {
+    padding: 1rem; /* Espaçamento interno das células */
+    border: 1px solid #ddd; /* Borda das células */
+    text-align: center; /* Centraliza o texto nas células */
+}
+
+table th {
+    background-color: #4CAF50; /* Cor de fundo verde para cabeçalho */
+    color: white; /* Cor do texto branco */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fundo cinza para linhas pares */
+}
+
+button {
+    padding: 0.5rem 1rem; /* Espaçamento interno dos botões */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+}
+
+button.edit {
+    background-color: #2196F3; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+}
+
+button.edit:hover {
+    background-color: #1E88E5; /* Azul mais escuro ao passar o mouse */
+}
+
+button.delete {
+    background-color: #f44336; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branco */
+}
+
+button.delete:hover {
+    background-color: #e53935; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Estilos adicionais */
+h3 {
+    color: #333; /* Cor do texto */
+}
+
+table {
+    width: 100%; /* Largura completa da tabela */
+    border-collapse: collapse; /* Remove espaçamento entre bordas */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Borda das células */
+    padding: 8px; /* Espaçamento interno das células */
+    text-align: center; /* Centraliza o texto nas células */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fundo cinza para linhas pares */
+}
+
+table tr:hover {
+    background-color: #ddd; /* Fundo cinza ao passar o mouse */
+}
+
+button {
+    background-color: #af4f4c; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    margin: 5px 0; /* Espaçamento externo vertical */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+button:hover {
+    background-color: #45a049; /* Verde mais escuro ao passar o mouse */
+}
+
+button.delete {
+    background-color: #f44336; /* Cor de fundo vermelha */
+}
+
+button.delete:hover {
+    background-color: #da190b; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Estilos para o formulário de edição */
+#formEdicao {
+    background-color: #d5edd6;
+    padding: 30px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do formulário */
+    max-width: 400px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    margin-bottom: 25px;
+}
+
+#formEdicao h3 {
+    margin-top: 0; /* Remove margem superior */
+}
+
+#formEdicao label {
+    display: block; /* Exibe como bloco */
+    margin: 10px 0 5px; /* Margens acima e abaixo */
+}
+
+#formEdicao input {
+    width: calc(100% - 22px); /* Largura total menos o espaçamento */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+#formEdicao button {
+    width: calc(50% - 10px); /* Largura metade menos o espaçamento */
+    display: inline-block; /* Exibe como bloco inline */
+}
+
+#formEdicao button:first-child {
+    margin-right: 20px; /* Margem direita */
+}
+
+.hidden {
+    display: none; /* Oculta o elemento */
+}
+
+section{
+    margin-top: 15px    ;
+}

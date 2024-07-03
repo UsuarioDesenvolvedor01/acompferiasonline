@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados de Funcionários</title>
+    <link rel="stylesheet" href="./Styles/banco-de-dados.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="centro">Banco de Dados das Férias dos Funcionários</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="banco-de-dados.html">Banco de Dados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <table id="tabelaFuncionarios">
+                <thead>
+                    <tr>
+                        <th>Matrícula</th>
+                        <th>Nome Completo</th>
+                        <th>Primeiro Nome</th>
+                        <th>Departamento</th>
+                        <th>Setor</th>
+                        <th>Data Aquisição Férias</th>
+                        <th>Data Início Férias</th>
+                        <th>Data Final Férias</th>
+                        <th>Data Retorno Férias</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As linhas da tabela serão preenchidas dinamicamente via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- Formulário de Edição -->
+    <div id="formEdicao" class="hidden">
+        <h3>Editar Funcionário</h3>
+        <form id="editarFuncionarioForm">
+            <input type="hidden" id="editIndex">
+
+            <label for="editMatricula">Matrícula:</label>
+            <input type="text" id="editMatricula" name="editMatricula">
+
+            <label for="editNomeCompleto">Nome Completo:</label>
+            <input type="text" id="editNomeCompleto" name="editNomeCompleto">
+
+            <label for="editPrimeiroNome">Primeiro Nome:</label>
+            <input type="text" id="editPrimeiroNome" name="editPrimeiroNome">
+
+            <label for="editDepartamento">Departamento:</label>
+            <input type="text" id="editDepartamento" name="editDepartamento">
+
+            <label for="editSetor">Setor:</label>
+            <input type="text" id="editSetor" name="editSetor">
+
+            <label for="editDataAquisicaoFerias">Data de Aquisição de Férias:</label>
+            <input type="date" id="editDataAquisicaoFerias" name="editDataAquisicaoFerias">
+
+            <label for="editDataInicioFerias">Data de Início de Férias:</label>
+            <input type="date" id="editDataInicioFerias" name="editDataInicioFerias">
+
+            <label for="editDataFinalFerias">Data de Final de Férias:</label>
+            <input type="date" id="editDataFinalFerias" name="editDataFinalFerias">
+
+            <label for="editDataRetornoFerias">Data de Retorno de Férias:</label>
+            <input type="date" id="editDataRetornoFerias" name="editDataRetornoFerias">
+
+            <button type="button" onclick="salvarEdicao()">Salvar</button>
+            <button type="button" onclick="cancelarEdicao()">Cancelar</button>
+        </form>
+    </div>
+    <script src="./banco-de-dados.js"></script>
+</body>
+
+</html>

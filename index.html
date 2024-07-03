@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Férias</title>
+    <link rel="stylesheet" href="./Styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="centro">Controle de Férias dos Funcionários</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="banco-de-dados.html">Banco de Dados</a></li>
+                <li><button class="sair" id="logoutBtn">Sair</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="controls">
+                <label for="ano">Ano:</label>
+                <select id="ano"></select>
+                <label for="mes">Mês:</label>
+                <select id="mes"></select>
+                <label for="dept">Departamento:</label>
+                <select id="dept"></select>
+                <label for="setor">Setor:</label>
+                <select id="setor"></select>
+                <button class="ExibirResumir" id="expandirDetalhes">Expandir Detalhes</button>
+                <button class="ExibirResumir" id="resumirDetalhes">Resumir Detalhes</button>
+            </div>
+            <div id="legenda">
+                <h3>Legenda:</h3>
+                <div class="legenda-item">
+                    <span class="legenda-cor ferias"></span> Férias
+                </div>
+                <div class="legenda-item">
+                    <span class="legenda-cor feriado"></span> Feriado
+                </div>
+                <div class="legenda-item">
+                    <span class="legenda-cor sabado"></span> Sábado
+                </div>
+                <div class="legenda-item">
+                    <span class="legenda-cor domingo"></span> Domingo
+                </div>
+                <div class="legenda-item">
+                    <span class="legenda-cor Retorno"></span> Retorno
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="calendarioContainer"></div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+/* Estilos gerais */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.centro {
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e6830;
+    color: white;
+    padding: 1rem 0;
+}
+
+header nav {
+    margin-top: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #3c863e;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+header nav ul li a:hover {
+    background-color: #74a376;
+}
+
+/* Seção principal */
+main {
+    display: flex;
+    height: 80vh;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 200px;
+    padding: 16px;
+    background-color: #deedde;
+    border-right: 1px solid #ddd;
+}
+
+.content {
+    flex: 1;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+/* Controles */
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.controls button,
+.controls select {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ExibirResumir {
+    background-color: #3c863e;
+    color: white;
+}
+
+.ExibirResumir:hover {
+    background-color: #74a376;
+}
+
+/* Legenda */
+#legenda {
+    margin-top: 1rem;
+    background-color: darkseagreen;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-family: cursive;
+}
+
+.legenda-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.legenda-cor {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    background-color: lightblue;
+}
+
+.ferias {
+    background-color: #ffcccc;
+}
+
+.feriado {
+    background-color: #d9534f;
+}
+
+.sabado {
+    background-color: #8b8b8b;
+}
+
+.domingo {
+    background-color: #525252;
+}
+
+/* Contêiner do calendário */
+#calendarioContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: max-content;
+}
+
+/* Tabela */
+.tabela {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.cabecalho-mes,
+.cabecalho-semana,
+.cabecalho-dia {
+    display: flex;
+}
+
+.mes-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mes-header {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #2e3b4e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.dia-container {
+    display: flex;
+}
+
+.semana-header,
+.dia-header {
+    display: inline-block;
+    text-align: center;
+    padding: 3.2px;
+    margin: 1.6px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ddd;
+}
+
+.semana-header {
+    font-weight: bold;
+    color: white;
+    background-color: #495566;
+}
+
+/* Funcionário */
+.funcionario-row {
+    display: flex;
+    align-items: center;
+}
+
+.funcionario-header {
+    width: 130px;
+    color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background: #2a8f3bd3;
+    text-align: right;
+    margin-right: 0.5rem;
+    position: sticky;
+    left: 0; /* Fixa os nomes dos funcionários à esquerda */
+    border-radius: 15px;
+}
+
+/* Dia */
+.dia-col {
+    display: inline-block;
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dia-col.ferias {
+    background-color: #ffcccc;
+}
+
+.dia-col.feriado {
+    background-color: #d9534f;
+}
+
+.dia-col.sabado {
+    background-color: #8b8b8b;
+}
+
+.dia-col.domingo {
+    background-color: #525252;
+}
+
+/* Layout resumido */
+.resumido .dia-container .dia-col {
+    display: none;
+}
+
+.resumido .dia-col,
+.resumido .semana-header,
+.resumido .dia-header{
+    width: 1px;
+    color: #ddd;
+    font-size: 0;
+}
+
+/* Botão Sair */
+.sair {
+    background-color: #d9534f;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 50px;
+}
+
+.sair:hover {
+    background-color: #c97875;
+}
+
+.retorno {
+    background-color: lightblue;
+}

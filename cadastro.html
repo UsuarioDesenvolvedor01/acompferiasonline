@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionário</title>
+    <link rel="stylesheet" href="./Styles/cadastro.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cadastro de Férias do Funcionário</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="banco-de-dados.html">Banco de Dados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form id="cadastroForm">
+                <div class="form-group">
+                    <label for="matricula">Matrícula</label>
+                    <input type="text" id="matricula" name="matricula" pattern="\d{2}\.\d{3}-\d" placeholder="00.000-0"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="nomeCompleto">Nome Completo</label>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome Completo do Funcionário"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="primeiroNome">Primeiro Nome</label>
+                    <input type="text" id="primeiroNome" name="primeiroNome" placeholder="Primeiro Nome do Funcionário"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="dept">Departamento</label>
+                    <input type="text" id="dept" name="dept" placeholder="Departamento do Funcionário" required>
+                </div>
+                <div class="form-group">
+                    <label for="setor">Setor</label>
+                    <input type="text" id="setor" name="setor" placeholder="Setor do Funcionário" required>
+                </div>
+                <div class="form-group">
+                    <label for="dataAquisicaoFerias">Data Aquisição Férias</label>
+                    <input type="date" id="dataAquisicaoFerias" name="dataAquisicaoFerias" required>
+                </div>
+                <div class="form-group">
+                    <label for="dataInicioFerias">Data Início Férias</label>
+                    <input type="date" id="dataInicioFerias" name="dataInicioFerias" required>
+                </div>
+                <div class="form-group">
+                    <label for="dataFinalFerias">Data Final Férias</label>
+                    <input type="date" id="dataFinalFerias" name="dataFinalFerias" required>
+                </div>
+                <div class="form-group">
+                    <label for="dataRetornoFerias">Data Retorno Férias</label>
+                    <input type="date" id="dataRetornoFerias" name="dataRetornoFerias" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <script src="./cadastro.js"></script>
+</body>
+
+</html>
